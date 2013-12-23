@@ -119,7 +119,7 @@ $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, $tvheadend->getUrl());
 curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
 curl_setopt($curl, CURLOPT_USERPWD, $tvheadend->username.':'.$tvheadend->password);
-curl_setopt($curl, CURLOPT_POST, count($tvheadend));
+curl_setopt($curl, CURLOPT_POST, count($adapter));
 curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($adapter));
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 
